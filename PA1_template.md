@@ -43,7 +43,7 @@ hist(stepsperday$totalsteps, main = "Histogram of Steps Per Day",
      xlab = "Total number of steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![](PA1_template_files/figure-html/total steps per day-1.png) 
 
 ```r
 mean(stepsperday$totalsteps, na.rm = TRUE)
@@ -76,7 +76,7 @@ plot(stepsperinterval$interval, stepsperinterval$meanint, type = "l",
      main = "Average Daily Activity Pattern")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![](PA1_template_files/figure-html/average daily activity pattern-1.png) 
 
 ```r
 maxint <- which.max(stepsperinterval$meanint)
@@ -104,7 +104,7 @@ hist(replacedsteps$totsteps, main = "Histogram of Steps Per Day (with NA's repla
      xlab = "Total number of steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![](PA1_template_files/figure-html/histogram with replaced NA-1.png) 
 
 ```r
 mean(replacedsteps$totsteps)
@@ -138,4 +138,4 @@ ggplot(meanperday, aes(interval, meanday)) + geom_line() + facet_grid(day~.) +
     xlab("Interval") + ylab("Number of Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![](PA1_template_files/figure-html/weekday weekend plots-1.png) 
